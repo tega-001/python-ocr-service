@@ -25,7 +25,8 @@ async def lifespan(app: FastAPI):
     global table_engine
     logger.info("Initializing PaddleOCR PP-Structure engine...")
     table_engine = PPStructureV3(
-        lang='en'
+        lang='en',
+        use_gpu=False
     )
     logger.info("OCR engine initialized successfully")
     yield
