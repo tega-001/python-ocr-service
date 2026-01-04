@@ -6,3 +6,4 @@ python-multipart
 httpx
 pillow
 numpy
+pydantic
