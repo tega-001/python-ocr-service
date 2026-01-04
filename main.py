@@ -10,7 +10,7 @@ from PIL import Image
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from paddleocr import PPStructureV3
+from paddleocr import PPStructure
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
     """Initialize OCR engine on startup"""
     global table_engine
     logger.info("Initializing PaddleOCR PP-Structure engine...")
-    table_engine = PPStructureV3(
+    table_engine = PPStructure(
         lang='en'
     )
     logger.info("OCR engine initialized successfully")
