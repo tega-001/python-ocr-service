@@ -1,8 +1,8 @@
-fastapi==0.109.0
-uvicorn==0.27.0
-paddleocr==2.7.0.3
-paddlepaddle==2.5.2
-python-multipart==0.0.6
-httpx==0.26.0
-pillow==10.2.0
-numpy==1.24.3
+fastapi
+uvicorn
+paddleocr
+paddlepaddle
+python-multipart
+httpx
+pillow
+numpy
